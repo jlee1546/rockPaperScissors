@@ -12,7 +12,7 @@ function computerPlay() {
 function playRound(playerSelection,computerSelection) {
    
     if ((playerSelection.toLowerCase() === 'rock') && (computerSelection.toLowerCase() === 'scissors')) {
-        console.log("You win! Rock beats scissors!");
+        return  "You win! Rock beats Scissors"
         playerScore++;
     } else if ((playerSelection.toLowerCase() === 'rock') && (computerSelection.toLowerCase() === 'paper')) {
         computerScore++
@@ -35,33 +35,32 @@ function playRound(playerSelection,computerSelection) {
     }
 }
 
-function displayWelcome() {
-    alert("Ready for some action? You are about to play rock, paper, and scissors game!")
-}
 
-function displayScore() {
+
+
     
-    if (playerScore > computerScore) {
-        console.log(`You win with a score of ${playerScore} to ${computerScore} with ties of ${tieScore}.`);
-    } else if (computerScore > playerScore) {
-        console.log(`Computer wins with a score of ${computerScore} to ${playerScore} with ties of ${tieScore}.`);
-    } else {
-        console.log(`It is a tie! You scored ${playerScore} and computer scored ${computerScore} that makes ${tieScore} tie(s).`);
-    }
-}
+
 
 function gamePlay() {
-    
-    let count = 0;
-
-    displayWelcome();
-
-    while (count < 5) {
-        let playerSelection = prompt("Choose rock, paper, or scissors.");
-        console.log(playRound(playerSelection, computerSelection));
-        count++;
+    const buttons = document.querySelectorAll('.clickMe');
+    buttons.forEach(button => button.addEventListener('click', (e) => {
+        
     }
+ 
+    
 
     
-    return displayScore();
 }
+
+
+// New Part of the game to be able to play on a web page
+
+
+
+
+const play = document.querySelector('.play');
+play.addEventListener('click', gamePlay)
+
+const para = document.createElement('p');
+const output = document.querySelector('.output');
+para.textContent = `You won ${playerScore} round(s), the computer won ${computerScore} round(s), and there was a tie ${tieScore} round(s).`
