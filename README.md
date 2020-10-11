@@ -1,5 +1,5 @@
-rps.html is a rock, paper, scissors game written in JavaScript. Currently the game
-is only meant to be played in the console. In order to play the game, the file must
-be loaded into a browser window and then a console can be opened and the gamePlay()
-function called to play the game. The game goes five rounds with the winner 
-(computer or player) displayed at the end of the game.
+There are two versions of the rock, paper, scissors game in this repository.
+ index.html and index-UI.html. index.html has no user interface and is menat to be played
+in the console. index-UI.html is the version that contains buttons for gameplay
+and displays the game output. All files labled without "UI" are for the console
+version only.
