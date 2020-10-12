@@ -1,4 +1,4 @@
-
+// Javascript for Rock, Paper, Scissors project @The_Odin_Project
 
 function computerPlay() {
     const computerChoices = ['Rock', 'Paper', 'Scissors'];

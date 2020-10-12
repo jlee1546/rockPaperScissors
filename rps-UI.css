@@ -1,6 +1,11 @@
+/* CSS for the Rock, Paper, Scissors project @The_Odin_Project */
+
 body {
     font-family: monospace;
+    background-color: rgb(179, 179, 174);
 }
+
+
 #button {
                 
     text-align: center;
@@ -41,4 +46,7 @@ button {
 #begin:active {
     width: 155px;
     height: 35px;
+}
+p {
+    font-size: 1.1em;
 }
